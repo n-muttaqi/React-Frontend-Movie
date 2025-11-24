@@ -1,16 +1,62 @@
-# React + Vite
+# Movie Explorer – Full Stack E-Commerce Style Movie Platform  
+Built with React, Node.js, Express, MySQL, JWT, and the TMDB API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack movie browsing platform where users can search for movies, view details, save favorites, and interact with a clean React UI. Backend services handle authentication, API routing, and database storage.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+### Frontend (React)
+- Interactive movie search UI built with React components, hooks, and the Context API  
+- Integration with the TMDB API for posters, ratings, summaries, and genres  
+- Client-side routing with React Router (Home, Favorites, and detailed movie pages)  
+- Reusable UI components such as MovieCard, FavoritesList, and layout containers  
+- Clean CSS styling for responsive and fast UI  
+- State management for search results, selected movies, and favorites  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Backend (Node.js + Express + MySQL)
+- REST API built using Express  
+- User authentication with JWT (login and registration)  
+- MySQL database for storing:
+  - User accounts  
+  - Favorites  
+  - Session tokens  
+- Secure API endpoints for user actions  
+- Environment-based configuration using `.env`  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+### Frontend
+- React  
+- React Router  
+- Context API  
+- CSS  
+
+### Backend
+- Node.js  
+- Express.js  
+- MySQL  
+- JWT Authentication  
+- TMDB API  
+
+---
+
+## Running the Project
+
+This project has a separate frontend and backend. Each must be started individually after installing the required Node modules.
+
+### 1. Start the Backend
+```bash
+cd server
+npm install
+npm start
+```
+### 2. Start the Frontend
+```bash
+cd client
+npm install
+npm start
+```
